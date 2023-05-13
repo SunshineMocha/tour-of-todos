@@ -1,0 +1,16 @@
+<!-- <h2>{{todo.title | uppercase}} Details</h2>
+ <div><span>id: </span>{{todo.id}}</div>
+
+<div>
+  <label for="name">Todo title: </label>
+  <input id="name" [(ngModel)]="todo.title" placeholder="name">
+</div> -->
+
+<h2>My Todos</h2>
+<ul class="todos">
+  <li *ngFor="let todo of todos">
+    <a routerLink="/detail/{{todo.id}}">
+      <span class="badge">{{todo.id}}</span> {{todo.title}}
+    </a>
+  </li>
+</ul>

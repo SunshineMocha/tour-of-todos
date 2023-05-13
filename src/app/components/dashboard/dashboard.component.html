@@ -1,0 +1,7 @@
+<h2>Important Todos</h2>
+<div class="todos-menu">
+  <a *ngFor="let todo of todos"
+  routerLink="/detail/{{todo.id}}">
+  {{todo.title}}
+</a>
+</div>
